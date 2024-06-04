@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baitap2</title>
+</head>
+
+<body>
+
+    <script>
+        let alpha = ["a", "b", "c", 1, 2, 3, "a1", "b1", "c1"];
+        let input = prompt("Nhập vào giá trị bất kỳ");
+        let beta = false;
+        for (let i = 0; i < alpha.length; i++) {
+            if (input == alpha[i]) {
+                console.log("Giá trị:(", input, ") ở vị trí =", i)
+                beta = true
+            };
+        };
+        if (beta == false) {
+            console.log("Phần tử không tồn tại")
+        };
+
+
+
+    </script>
+
+</body>
+
+</html>

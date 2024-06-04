@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt1</title>
+</head>
+
+<body>
+
+
+    <script>
+        let a = [1, 2, 3, "a", "b", "c"]
+        let b = ["a", "b", "c"]
+        // for (let i = 0; i < a.length; i++) {
+        //     if (typeof a[i] == "number")
+        //         console.log("i", i, "value", a[i])
+        // }
+
+        let c = false
+        for (let i = 0; i < a.length; i++) {
+            if (typeof a[i] == "number") {
+                console.log("i", i, "value", a[i])
+                c = true
+            }
+
+
+        }
+        if (c == false) {
+            console.log("Trong mảng không tồn tại số nguyên")
+        }
+    </script>
+</body>
+
+</html>

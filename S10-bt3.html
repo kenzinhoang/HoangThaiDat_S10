@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bt3</title>
+</head>
+
+<body>
+
+    <script>
+        let number = [1, 2, 3, 9, 8, 7, 3, 2, 1, 6, 7, 8, 9, 4, 5, 9, 3, 3, 22];
+        let input = Number(prompt("Nhập vào một số nguyên bất kỳ"));
+        let count = 0
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] == input) {
+                count++
+            }
+        }
+        console.log("Phần tử", input, "có số lần xuất hiện:", count)
+    </script>
+</body>
+
+</html>
