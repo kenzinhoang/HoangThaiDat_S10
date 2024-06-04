@@ -9,15 +9,46 @@
 
 <body>
     <script>
-        let n = [1, 5, 6, 3, 2, 1, 1, 5, 6, 7]
+        //let n = [1, 5, 6, 3, 2, 1, 1, 5, 6, 7]
         let x = Number(prompt("Nhập vào một số bất kỳ"))
-        let sum = 0
-        for (let i = 0; i < n.length; sum += n[i++]) {
-            if (sum == x) {
+        let arr = [10, 0, - 1, 20, 25, 30]
+        let sum = 59
+        let temp = 0;
 
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
             }
         }
-        console.log("sum", sum)
+
+        for (let i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i; j < arr.length - 1; j++) {
+                if (arr[i] + arr[j] == sum) {
+                    console.log(arr[i] + "," + arr[j]);
+                    break;
+                }
+
+                else {
+                    for (let k = j + 1; k < arr.length - 2; k++) {
+                        if (arr[i] + arr[j] + arr[k] == sum) {
+                            console.log(arr[i] + "," + arr[j] + "," + arr[k]);
+                            break;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
     </script>
 </body>
 
